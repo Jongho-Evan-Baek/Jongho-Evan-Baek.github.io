@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jongho Baek | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #E3FDF5;
+      color: #333;
+    }
+    header {
+      padding: 1rem 2rem;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    .contact {
+      margin-top: 2rem;
+    }
+    .social-links a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0077b5;
+      font-weight: bold;
+    }
+    .cv-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #0077b5;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+  <header>
+    <div><strong>Jongho Baek (Evan)</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>About</h1>
+    <p><strong>M.A. Student</strong><br />
+      Educational Counseling,<br />
+      Department of Education,<br />
+      Seoul National University
+    </p>
+    <p class="contact">
+      📧 <a href="mailto:jhevan@snu.ac.kr">jhevan@snu.ac.kr</a>
+    </p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/jongho-baek-52a499355" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon – this section will showcase my academic and research projects.</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>Coming soon – this section will include selected publications and papers.</p>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p>You can download my CV using the link below.</p>
+    <a class="cv-link" href="cv.pdf" target="_blank">Download CV (PDF)</a>
+  </section>
 </body>
 </html>
