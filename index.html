@@ -55,20 +55,31 @@
       border-radius: 4px;
     }
   </style>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+    window.onload = function () {
+      showSection('about');
+    }
+  </script>
 </head>
 <body>
   <header>
     <div><strong>Jongho Baek (Evan)</strong></div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#cv">CV</a>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('projects')">Projects</a>
+      <a href="#" onclick="showSection('publications')">Publications</a>
+      <a href="#" onclick="showSection('cv')">CV</a>
     </nav>
   </header>
 
   <section id="about">
     <h1>About</h1>
+    <p><strong>Jongho Baek (Evan)</strong></p>
     <p><strong>M.A. Student</strong><br />
       Educational Counseling,<br />
       Department of Education,<br />
@@ -82,17 +93,17 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" style="display: none;">
     <h2>Projects</h2>
     <p>Coming soon – this section will showcase my academic and research projects.</p>
   </section>
 
-  <section id="publications">
+  <section id="publications" style="display: none;">
     <h2>Publications</h2>
     <p>Coming soon – this section will include selected publications and papers.</p>
   </section>
 
-  <section id="cv">
+  <section id="cv" style="display: none;">
     <h2>CV</h2>
     <p>You can download my CV using the link below.</p>
     <a class="cv-link" href="cv.pdf" target="_blank">Download CV (PDF)</a>
